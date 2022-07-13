@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.intro{
+    display: flex;
+    color: #fff;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url('pexels-jeswin-thomas-1280162.jpg');
+    background-size: cover;
+    padding-top: 300px;
+}
+.typing{
+    position: relative;
+    margin-left: 10px;
+}
+.typing::after{
+    content: "";
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 35px;
+    border-right: 2px solid #fff;
+    animation: blink .5s infinite ease-in-out;
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
